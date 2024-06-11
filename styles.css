@@ -1,0 +1,105 @@
+/* styles.css */
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #011425;  /* Background color of the page */
+    color: #fff;  /* Default text color */
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #242424;  /* Navigation menu background color */
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+#sidebar ul li {
+    padding: 10px 0;
+    width: 100%;
+}
+
+#sidebar ul li a {
+    color: white;  /* Text color in navigation menu */
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #5C7C89; /* Box around the sections of navigation */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background-color: #1F4959;
+    color: #242424;
+}
+
+#content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #1F4959;  /* Topics color */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #5C7C89;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#avatar {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    border-radius: 50%;  /* Optional: make the avatar circular */
+}
+
+button {
+    background-color: #1F4959;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0BC945;
+}
